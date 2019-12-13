@@ -2,16 +2,12 @@
  * Save.java saves the content to a choosen file
  * */
 
+import javax.swing.*;
 import javax.swing.filechooser.FileSystemView;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.nio.file.Path;
 
 public class Save {
 
-
-    /**
+     /**
      * returns the standart documents path as a String
      * */
 
@@ -19,26 +15,19 @@ public class Save {
         return FileSystemView.getFileSystemView().getDefaultDirectory().getPath();
     }
 
-    /**
-     * saves the arguments to a file
-     * */
+    public static void saveToFileChooser(){
+    //Create a file chooser
+        final JFileChooser fc = new JFileChooser();
 
-    public static void saveToFile(Path filePath, String fileName, String content){
+    //In response to a button click:
+        int returnVal = fc.showSaveDialog(null);
 
-        // creation Writer
-        BufferedWriter writer = null;
-        String completePath = filePath + fileName;
-
-        try {
-
-            writer = new BufferedWriter(new FileWriter(completePath));
-            writer.write(content);
-            writer.close();
-
-            System.out.println("saved");
-
-        } catch (IOException e) {
-            e.printStackTrace();
+        if(returnVal == JFileChooser.APPROVE_OPTION)
+        {
+            // Ausgabe der ausgewaehlten Datei
+            System.out.println("Die folgende Datei wurde gespeichert: " +
+                    fc.getSelectedFile().getName());
         }
     }
+
 }
