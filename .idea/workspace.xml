@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f94572-557d-4573-89b0-47f4afb939fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Close.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Editor2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Editor2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Editor2/Save.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Editor2/Save.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Editor2/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Editor2/sample.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,12 +29,6 @@
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="525" />
-    <option name="y" value="392" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
   </component>
   <component name="ProjectId" id="1UvQ89TdLxzvXRrwYVKgR4t7jB0" />
   <component name="ProjectLevelVcsManager">
@@ -103,22 +99,22 @@
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="604" y="373" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1504.963@0.0.1504.963" timestamp="1576234440786" />
-    <state width="1461" height="256" key="GridCell.Tab.0.bottom" timestamp="1576235795583">
+    <state width="1461" height="256" key="GridCell.Tab.0.bottom" timestamp="1576236746217">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="256" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1576235795583" />
-    <state width="1461" height="256" key="GridCell.Tab.0.center" timestamp="1576235795583">
+    <state width="1461" height="256" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1576236746217" />
+    <state width="1461" height="256" key="GridCell.Tab.0.center" timestamp="1576236746217">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="256" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1576235795583" />
-    <state width="1461" height="256" key="GridCell.Tab.0.left" timestamp="1576235795583">
+    <state width="1461" height="256" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1576236746217" />
+    <state width="1461" height="256" key="GridCell.Tab.0.left" timestamp="1576236746216">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="256" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1576235795583" />
-    <state width="1461" height="256" key="GridCell.Tab.0.right" timestamp="1576235795583">
+    <state width="1461" height="256" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1576236746216" />
+    <state width="1461" height="256" key="GridCell.Tab.0.right" timestamp="1576236746217">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="256" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1576235795583" />
+    <state width="1461" height="256" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1576236746217" />
     <state x="564" y="400" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576234478166">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
