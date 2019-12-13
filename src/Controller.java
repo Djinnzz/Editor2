@@ -11,6 +11,9 @@ public class Controller {
     public void listenOpen()
     {
         openFile.openFile();
+        openFile.readFile();
     }
 
 }
+
+//Test
