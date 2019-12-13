@@ -35,6 +35,8 @@ public class Save {
             writer.write(content);
             writer.close();
 
+            System.out.println("saved");
+
         } catch (IOException e) {
             e.printStackTrace();
         }
