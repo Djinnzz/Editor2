@@ -7,6 +7,9 @@ public class openFile
 {
 
 
+    /**
+     * Opens a new Window to choose a File
+     */
     public static void openFile()
     {
         FileChooser fileChooser = new FileChooser();
@@ -15,7 +18,8 @@ public class openFile
         fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
 
         fileChooser.getExtensionFilters().addAll(
-                new FileChooser.ExtensionFilter("All Images", "*.*")
+                new FileChooser.ExtensionFilter("All Images", "*.*"),
+                new FileChooser.ExtensionFilter("HTML Files", "*.htm")
         );
 
 
