@@ -10,8 +10,8 @@ public class Controller {
     @FXML
     public void listenOpen()
     {
-        openFile.openFile();
-        openFile.readFile();
+        openFile.open();
+        //openFile.readFile();
     }
 
 }

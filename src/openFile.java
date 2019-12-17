@@ -1,51 +1,70 @@
-import javax.swing.*;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextArea;
+import javafx.stage.FileChooser;
+
+import java.awt.*;
 import java.io.*;
 
 
 public class openFile {
 
-
+    @FXML
+    private static MenuItem file;
+    @FXML
+    private static TextArea Textarea;
+    private Desktop desktop = Desktop.getDesktop();
 
 
     /**
-     * Opens a new Window to choose a File
+     * User can choose a File
      */
+    public static void open() {
 
-    static String filepath;
+        Desktop desktop = Desktop.getDesktop();
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Open File");
+        fileChooser.showOpenDialog(null);
 
-    public static void openFile() {
-        JFileChooser fileChooser = new JFileChooser();
-        int returnval = fileChooser.showOpenDialog(null);
-        if(returnval == JFileChooser.APPROVE_OPTION)
-             filepath = fileChooser.getSelectedFile().getAbsolutePath();
-        fileChooser.show();
-        System.out.println(filepath);
+                file.setOnAction(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent actionEvent) {
+                File file = fileChooser.showOpenDialog(null);
+                if (file != null) {
+                    Textarea.setText(readFile(file));
+                }
+            }
+        });
     }
 
-
-    public static void readFile() {
+    /**
+     * The bufferedReader will read the File
+     * @param file
+     * @return
+     */
+    public static String readFile(File file) {
         StringBuilder stringBuffer = new StringBuilder();
         BufferedReader bufferedReader = null;
-        File file = new File("Text.txt");
-        String path = "Text.txt";
 
         try {
 
-            bufferedReader = new BufferedReader(new FileReader(path));
+            bufferedReader = new BufferedReader(new FileReader(file));
 
             String text;
             while ((text = bufferedReader.readLine()) != null) {
                 stringBuffer.append(text);
-                System.out.println(text);
             }
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+
+
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        return stringBuffer.toString();
     }
 }
+
 
 
